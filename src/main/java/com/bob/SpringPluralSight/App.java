@@ -1,5 +1,8 @@
 package com.bob.SpringPluralSight;
 
+import com.bob.SpringPluralSight.service.SpeakerService;
+import com.bob.SpringPluralSight.service.SpeakerServiceImpl;
+
 /**
  * Hello world!
  *
@@ -8,6 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        SpeakerService service = new SpeakerServiceImpl();
+         System.out.println(service.findAll().get(0).getName());
     }
 }
