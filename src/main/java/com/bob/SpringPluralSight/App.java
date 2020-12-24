@@ -14,7 +14,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        //SpeakerService service = new SpeakerServiceImpl();
+        //SpeakerService service = new SpeakerServiceImpl(); 
         
     	ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
     	SpeakerService service = context.getBean(SpeakerService.class);
