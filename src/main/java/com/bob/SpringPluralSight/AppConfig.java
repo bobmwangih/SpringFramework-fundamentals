@@ -22,7 +22,10 @@ public class AppConfig {
 		
 		//constructor injection
 		
-		SpeakerServiceImpl service = new SpeakerServiceImpl(getSpeakerRepo());
+		//SpeakerServiceImpl service = new SpeakerServiceImpl(getSpeakerRepo());
+		
+		//annotation
+		SpeakerServiceImpl service = new SpeakerServiceImpl();
 		return service;
 	}
 	

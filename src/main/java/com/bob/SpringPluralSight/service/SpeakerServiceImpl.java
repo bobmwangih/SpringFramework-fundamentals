@@ -2,6 +2,8 @@ package com.bob.SpringPluralSight.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.bob.SpringPluralSight.model.Speaker;
 import com.bob.SpringPluralSight.repository.SpeakerRepo;
 import com.bob.SpringPluralSight.repository.SpeakerRepoImpl;
@@ -19,6 +21,13 @@ public class SpeakerServiceImpl implements SpeakerService{
 
 
 
+	public SpeakerServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	@Autowired
 	public void setRepository(SpeakerRepo repository) {
 		this.repository = repository;
 	}
