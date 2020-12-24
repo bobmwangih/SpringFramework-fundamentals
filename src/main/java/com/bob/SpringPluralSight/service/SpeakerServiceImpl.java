@@ -3,11 +3,13 @@ package com.bob.SpringPluralSight.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.bob.SpringPluralSight.model.Speaker;
 import com.bob.SpringPluralSight.repository.SpeakerRepo;
 import com.bob.SpringPluralSight.repository.SpeakerRepoImpl;
 
+@Service
 public class SpeakerServiceImpl implements SpeakerService{
 	
 	public SpeakerRepo repository;
