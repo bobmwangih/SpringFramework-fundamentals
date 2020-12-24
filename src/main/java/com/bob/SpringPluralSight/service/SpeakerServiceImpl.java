@@ -8,8 +8,16 @@ import com.bob.SpringPluralSight.repository.SpeakerRepoImpl;
 
 public class SpeakerServiceImpl implements SpeakerService{
 	
-	public SpeakerRepo repository= new SpeakerRepoImpl();
+	public SpeakerRepo repository;
 	
+	
+	
+	public void setRepository(SpeakerRepo repository) {
+		this.repository = repository;
+	}
+
+
+
 	public List<Speaker> findAll() {
 		
 		return repository.findAll();
